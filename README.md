@@ -12,4 +12,12 @@ All entries in the sample file (both `B##4` and `C##4`) have `0x01000000` and `0
 
 `B##4` then has `0xfa040000` (number of 8-byte entries). Each entry is a pair of duplicated addresses of `C##4` entries, 4+4 bytes. The order of addresses is not sequential.
 
-`C##4` then has a number of bytes in data entry, some other fields (`0x01000000`, `0x07000000`, `0x00000000` and `0x04000000`), and the data themselves finally. Most entries end with a `0xe803fefefeff` marker, but some end with a truncated `0xef03fefeff` one.
+`C##4` then has a number of bytes in data entry, some other fields:
+
+* `0x01000000`
+* `0x07000000`
+* `0x00000000`
+* `0x04000000`
+* the data themselves finally.
+
+Most `C##4` entries end with a `0xe803fefefeff` marker, but some end with a truncated `0xef03fefeff` one (included into the entry length).
