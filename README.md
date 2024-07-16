@@ -20,4 +20,4 @@ All entries in the sample file (both `B##4` and `C##4`) have `0x01000000` and `0
 * `0x04000000`
 * the data themselves finally.
 
-Most `C##4` entries end with a `0xe803fefefeff` marker, but some end with a truncated `0xef03fefeff` one (included into the entry length).
+Most `C##4` entries end with a `0xe803fefefeff` marker, but some end with a truncated `0xe803fefeff` one (included into the entry length).
