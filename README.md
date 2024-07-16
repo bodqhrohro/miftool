@@ -21,3 +21,5 @@ All entries in the sample file (both `B##4` and `C##4`) have `0x01000000` and `0
 * the data themselves finally.
 
 Most `C##4` entries end with a `0xe803fefefeff` marker, but some end with a truncated `0xe803fefeff` one (included into the entry length).
+
+The entries have a SVGB format, which a decoder exists for: https://sourceforge.net/projects/svgb2svg/
